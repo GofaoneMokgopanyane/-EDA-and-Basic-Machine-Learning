@@ -23,11 +23,29 @@ Seismic data is critical in understanding earthquakes, underground activity, and
 
 The dataset used in this project is a publicly available seismic dataset, which typically includes:
 
-- Magnitude of seismic events  
-- Depth  
-- Geographic coordinates (latitude & longitude)  
-- Time of occurrence  
-- Additional geological attributes  
+## Dataset Information
+
+The data used in this project is the **Seismic-Bumps Data Set** from the UCI Machine Learning Repository. It describes the seismic activity in a coal mine and is used to predict hazardous seismic events.
+
+### Attribute Information (Data Dictionary)
+
+| # | Column Name | Description | Values/Units |
+|:---|:---|:---|:---|
+| 1 | **seismic** | Seismic hazard assessment (seismic method) | a (none), b (low), c (high), d (danger) |
+| 2 | **seismoacoustic** | Seismic hazard assessment (seismoacoustic method) | a, b, c, d |
+| 3 | **shift** | Type of work shift | W (coal-getting), N (preparation) |
+| 4 | **genergy** | Energy recorded by the most active geophone | Joules |
+| 5 | **gpuls** | Number of pulses recorded by the most active geophone | Count |
+| 6 | **gdenergy** | Deviation of energy from the average of previous 8 shifts | Ratio/Numeric |
+| 7 | **gdpuls** | Deviation of pulses from the average of previous 8 shifts | Ratio/Numeric |
+| 8 | **ghazard** | Hazard assessment based only on the most active geophone | a, b, c, d |
+| 9 | **nbumps** | Total number of seismic bumps in the previous shift | Count |
+| 10-16 | **nbumps[2-89]** | Number of bumps within specific energy ranges (10^2 to 10^10) | Count |
+| 17 | **energy** | Total energy of all seismic bumps in the previous shift | Joules |
+| 18 | **maxenergy** | Maximum energy of a single bump in the previous shift | Joules |
+| 19 | **class (Target)** | **The result to predict:** 1 = Hazard in next shift, 0 = No hazard | 0 or 1 |
+
+**Source:** [UCI Machine Learning Repository - Seismic-Bumps](https://archive.ics.uci.edu/ml/datasets/seismic-bumps)
 
 ---
 
