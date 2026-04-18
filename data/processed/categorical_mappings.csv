@@ -1,0 +1,11 @@
+column,original,encoded
+seismic,a,0
+seismic,b,1
+seismoacoustic,a,0
+seismoacoustic,b,1
+seismoacoustic,c,2
+shift,N,0
+shift,W,1
+hazard,a,0
+hazard,b,1
+hazard,c,2

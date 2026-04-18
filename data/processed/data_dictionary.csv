@@ -1,0 +1,33 @@
+column,dtype,description
+seismic,int64,Seismic monitoring result (encoded)
+seismoacoustic,int64,Seismoacoustic monitoring result (encoded)
+shift,int64,"Shift type (encoded: N=dry, W=wet - higher risk)"
+genergy,int64,Total seismic energy from bumps
+gpuls,int64,Total pulses from bumps
+gdenergy,int64,Seismic energy deviation from mean
+gdpuls,int64,Pulse deviation from mean
+hazard,int64,Hazard status (encoded)
+nbumps,int64,Total number of bumps
+nbumps2,int64,Number of bumps (energy class 2)
+nbumps3,int64,Number of bumps (energy class 3)
+nbumps4,int64,Number of bumps (energy class 4)
+nbumps5,int64,Number of bumps (energy class 5)
+nbumps6,int64,Number of bumps (energy class 6)
+nbumps7,int64,Number of bumps (energy class 7)
+nbumps89,int64,Number of bumps (energy classes 8-9)
+energy,int64,Total seismic energy
+maxenergy,int64,Maximum energy in single bump
+class,int64,"Target class (0=safe, 1=hazardous)"
+nbumps_occurred,int64,Binary: any nbumps occurred
+nbumps2_occurred,int64,Binary: any nbumps2 occurred
+nbumps3_occurred,int64,Binary: any nbumps3 occurred
+nbumps4_occurred,int64,Binary: any nbumps4 occurred
+nbumps5_occurred,int64,Binary: any nbumps5 occurred
+nbumps6_occurred,int64,Binary: any nbumps6 occurred
+nbumps7_occurred,int64,Binary: any nbumps7 occurred
+nbumps89_occurred,int64,Binary: any nbumps89 occurred
+energy_occurred,int64,Binary: any energy recorded
+maxenergy_occurred,int64,Binary: maxenergy > 0
+energy_ratio,float64,Ratio of max to total energy
+log_energy,float64,Log-transformed energy (log1p)
+shift_risk,int64,Shift risk indicator (1=W shift)
